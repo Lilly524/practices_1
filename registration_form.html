@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 7px;
+            margin: 6px 0 14px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        label { font-weight: bold; }
+        .gender {
+            margin-bottom: 14px;
+        }
+        button {
+            background: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2c6ad7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label>Gender:</label><br>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male" style="font-weight:normal;">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female" style="font-weight:normal;">Female</label>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
